@@ -1,0 +1,94 @@
+
+
+.main-content__item-title
+	background main-color
+	color #fff
+	text-transform uppercase
+	text-align center
+	font-size 14px
+	padding 0 15px
+
+	.main-content__item-name
+		font-size 18px
+		font-family ff-bold
+		margin 0
+		padding-top 45px
+		padding-bottom 20px
+
+
+	.main-content__item-descr
+		margin 0 auto
+		padding-top 24px
+		padding-bottom 45px
+		display block
+		max-width 260px
+
+.item-city
+	.main-content__item-name
+		padding-top 70px
+
+
+.main-content__item_no-content
+	.main-content__item-title
+		color #000
+		background #eee
+
+	&:not(:last-child)
+		.main-content__item-descr
+			border-bottom 1px solid #d6d6d6
+
+.main-content__item-img
+	background-size cover
+	background-repeat no-repeat
+	background-position center center
+	width 320px
+	height 260px
+
+.item-city__img
+	background url('../images/main-city-mobile@1x.jpg')
+.item-bridge__img
+	background url('../images/main-bridge-mobile@1x.jpg')
+
+.item-city__reasons
+	margin 0
+	padding 0
+	padding-top 25px
+	padding-bottom 25px
+	text-transform uppercase
+	.reason
+		list-style-type none
+		padding-left 50px
+		padding-bottom 23px
+		padding-right 40px
+		position relative
+		.reason-name
+			font-size 21px
+			margin 0
+			padding-top 10px
+		.reason-descr
+			font-size 14px
+			margin 0
+			padding-top 26px
+			box-sizing border-box
+		&:before
+			content ''
+			display block
+			background-repeat no-repeat
+			background-size 100% 100%
+			width 40px
+			height 40px
+			position absolute
+			left 0
+			top 0
+
+.reason-house
+	&:before
+		background-image url('../images/icon-house.svg')
+
+.reason-gift
+	&:before
+		background-image url('../images/icon-gift.svg')
+
+.reason-burger
+	&:before
+		background-image url('../images/icon-burger.svg')

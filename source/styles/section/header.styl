@@ -1,0 +1,40 @@
+@import "nav";
+
+.top-menu
+	height 56px
+	position relative
+.logo
+	text-align center
+	display block
+
+.menu-toggle
+	font-size 0
+	width 30px
+	height 24px
+	position absolute
+	top 16px
+	right 15px
+	cursor pointer
+	.menu-toggle__line
+		width 30px
+		height 3px
+		display block
+		background-color main-color
+		&:before
+			content ''
+			display block
+			width 30px
+			height 3px
+			background-color main-color
+			position absolute
+			left 0
+			top 8px
+		&:after
+			content ''
+			display block
+			width 30px
+			height 3px
+			background-color main-color
+			position absolute
+			left 0
+			top 16px

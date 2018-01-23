@@ -1,0 +1,46 @@
+.footer
+	text-align center
+	padding 40px 0
+
+.hash
+	font-size 21px
+	font-family ff-bold
+	text-transform uppercase
+
+.social
+	margin 0
+	padding 40px 0
+	display flex
+	align-items center
+	justify-content center
+	.social-item
+		list-style-type none
+		width 48px
+		height 48px
+		background-color main-color
+		margin 3px
+		background-position center center
+		background-repeat no-repeat
+		transition background-color 0.3s
+		.social-item__link
+			font-size 0
+		&:active
+			background-color main-black-color
+		&:hover
+			background-color main-light-color
+	.social-item_tw
+		background-image url('../images/icon-twitter.svg')
+	.social-item_fb
+		background-image url('../images/icon-facebook.svg')
+	.social-item_youtube
+		background-image url('../images/icon-youtube.svg')
+
+.developer
+	font-size 14px
+	text-transform uppercase
+	display flex
+	align-items center
+	justify-content center
+.developer-icon
+	width 27px
+	height 35px

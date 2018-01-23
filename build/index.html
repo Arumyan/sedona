@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>Sedona</title>
+  </head>
+  <body>
+    <header class="header index-header">
+      <div class="container">
+        <nav class="nav">
+          <ul class="nav-items">
+            <li class="nav-item"><a class="nav-item__link" href="#">Главная</a></li>
+            <li class="nav-item"><a class="nav-item__link" href="#">Фото и видео</a></li>
+            <li class="nav-item"><a class="nav-item__link" href="#">Форма отзыва</a></li>
+            <li class="nav-item"><a class="nav-item__link" href="#">HTML ACADEMY</a></li>
+          </ul>
+          <div class="nav-btn-close">Кнопка закрытия меню</div>
+        </nav>
+        <div class="top-menu"><a class="logo" href="#" title="Sedona">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="images/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="images/logo-sedona-tablet.svg">
+              <source media="(min-width: 320px)" srcset="images/logo-sedona-mobile.svg"><img class="logo__img" src="images/logo-sedona-mobile.svg" alt="Sedona" width="102" height="84">
+            </picture></a>
+          <div class="menu-toggle">Кнопка меню<span class="menu-toggle__line"></span></div>
+        </div>
+      </div>
+    </header>
+    <section class="intro">
+      <div class="intro-title"><img class="intro-image__text" src="images/text-sedona-index.svg" width="320" height="389" alt="SEDONA"></div>
+      <div class="intro-descr"><img class="intro-triangle" src="images/bg-triangle.svg" alt="">
+        <div class="container">
+          <h2 class="intro-descr__title">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h2>
+          <p class="intro-descr__text">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
+        </div>
+      </div>
+    </section>
+    <section class="main-content">
+      <div class="container">
+        <div class="main-content__items">
+          <div class="main-content__item item-city">
+            <div class="main-content__item-title">
+              <h3 class="main-content__item-name">Настоящий городок</h3><span class="main-content__item-number">- N1 -</span>
+              <p class="main-content__item-descr">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+            </div>
+            <div class="main-content__item-img item-city__img"></div>
+            <ul class="item-city__reasons">
+              <li class="reason reason-house">
+                <h4 class="reason-name">Жилье</h4>
+                <p class="reason-descr">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </li>
+              <li class="reason reason-gift">
+                <h4 class="reason-name">Сувениры</h4>
+                <p class="reason-descr">Не только китайского, но и местного производства!</p>
+              </li>
+              <li class="reason reason-burger">
+                <h4 class="reason-name">Еда</h4>
+                <p class="reason-descr">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+              </li>
+            </ul>
+          </div>
+          <div class="main-content__item item-bridge">
+            <div class="main-content__item-title">
+              <h3 class="main-content__item-name">Там есть мост дъявола</h3><span class="main-content__item-number">- N2 -</span>
+              <p class="main-content__item-descr">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
+            <div class="main-content__item-img item-bridge__img"></div>
+          </div>
+          <div class="main-content__item main-content__item_no-content item-area">
+            <div class="main-content__item-title">
+              <h3 class="main-content__item-name">Небольшая площадь</h3><span class="main-content__item-number">- N3 -</span>
+              <p class="main-content__item-descr">ВСЕ интересные места находятся очень близко</p>
+            </div>
+          </div>
+          <div class="main-content__item main-content__item_no-content item-road">
+            <div class="main-content__item-title">
+              <h3 class="main-content__item-name">Красивая дорога</h3><span class="main-content__item-number">- N4 -</span>
+              <p class="main-content__item-descr">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+            </div>
+          </div>
+          <div class="main-content__item main-content__item_no-content item-tourist">
+            <div class="main-content__item-title">
+              <h3 class="main-content__item-name">Мало туристов</h3><span class="main-content__item-number">- N5 -</span>
+              <p class="main-content__item-descr">Большинство едет в гранд каньон и толпится там</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="hotels">
+      <div class="container">
+        <h3 class="hotels-title">Заинтересовались?</h3>
+        <p class="hotels-descr">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p><a class="hotels-btn" href="#">Найти гостинницу</a>
+      </div>
+    </section>
+    <section class="map">
+      <div class="container">
+        <div id="map"></div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="hash">#visitsedona</div>
+        <ul class="social">
+          <li class="social-item social-item_tw"><a class="social-item__link">Твиттер</a></li>
+          <li class="social-item social-item_fb"><a class="social-item__link">Фейсбук</a></li>
+          <li class="social-item social-item_youtube"><a class="social-item__link">Ютуб</a></li>
+        </ul>
+        <div class="developer">Разработано
+          <svg class="developer-icon">
+            <use xlink:href="images/sprite-svg.svg#htmlacademy" width="27px" height="35px"></use>
+          </svg>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvSnexh0iWaB7Z5U8FA_BpcEgJIVD3d4g&amp;callback=initMap" async defer></script>
+  </body>
+</html>
