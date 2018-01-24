@@ -1,5 +1,4 @@
 
-
 .main-content__item-title
 	background main-color
 	color #fff
@@ -14,7 +13,6 @@
 		margin 0
 		padding-top 45px
 		padding-bottom 20px
-
 
 	.main-content__item-descr
 		margin 0 auto
@@ -51,9 +49,7 @@
 
 .item-city__reasons
 	margin 0
-	padding 0
-	padding-top 25px
-	padding-bottom 25px
+	padding 25px 15px
 	text-transform uppercase
 	.reason
 		list-style-type none
@@ -92,3 +88,64 @@
 .reason-burger
 	&:before
 		background-image url('../images/icon-burger.svg')
+
+@media screen and (min-width: 768px)
+	.main-content__items
+		display flex
+		flex-wrap wrap
+
+	.main-content__item
+		display flex
+		flex-wrap wrap
+		width 100%
+
+	.item-bridge
+		.main-content__item-title
+			order 1
+		.main-content__item-img
+			order 0
+
+	.main-content__item_no-content
+		width calc(100%/3)
+		.main-content__item-title
+			width 100%
+		&:not(:last-child)
+			.main-content__item-descr
+				border-bottom none
+
+	.main-content__item-title
+		width calc(100%/3)
+		box-sizing border-box
+		padding 0 45px
+		.main-content__item-name
+			font-size 21px
+			padding-top 45px
+			max-width 155px
+			display block
+			margin 0 auto
+
+	.item-city__img
+		background url('../images/main-city-tablet@1x.jpg')
+
+	.item-bridge__img
+		background url('../images/main-bridge-tablet@1x.jpg')
+
+	.main-content__item-img
+		width calc(100%/3*2)
+		height auto
+		background-repeat no-repeat
+		background-size cover
+
+	.item-city__reasons
+		display flex
+		text-align center
+		padding 0
+		.reason
+			width calc(100%/3)
+			padding 150px 45px 65px
+			&:before
+				width 70px
+				height 70px
+				left 50%
+				margin-left -35px
+				top 55px

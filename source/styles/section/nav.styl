@@ -1,5 +1,6 @@
 .nav
 	position relative
+
 .nav-items
 	margin 0
 	padding 0
@@ -23,11 +24,9 @@
 		&:hover
 			background main-light-color
 
-
 		.nav-item__link
 			text-decoration none
 			color inherit
-
 
 .nav-btn-close
 	font-size 0
@@ -59,3 +58,31 @@
 		height 4px
 		transform rotate(-45deg)
 
+@media screen and (min-width: 768px)
+	.nav-btn-close
+		display none
+
+	.nav-items
+		display flex
+		justify-content space-between
+		.nav-item_photo
+			margin-right auto
+		.nav-item_form
+			margin-left auto
+		.nav-item
+			width 20%
+			color #000
+			background none
+			border none
+			font-size 14px
+			transition color 0.3s
+			&:last-child
+				box-shadow none
+			&:active
+				background none
+				color #cacaca
+				&:hover
+					color #604e43
+			&:hover
+				background none
+				color main-color

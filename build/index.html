@@ -10,22 +10,24 @@
   <body>
     <header class="header index-header">
       <div class="container">
-        <nav class="nav">
-          <ul class="nav-items">
-            <li class="nav-item"><a class="nav-item__link" href="#">Главная</a></li>
-            <li class="nav-item"><a class="nav-item__link" href="#">Фото и видео</a></li>
-            <li class="nav-item"><a class="nav-item__link" href="#">Форма отзыва</a></li>
-            <li class="nav-item"><a class="nav-item__link" href="#">HTML ACADEMY</a></li>
-          </ul>
-          <div class="nav-btn-close">Кнопка закрытия меню</div>
-        </nav>
-        <div class="top-menu"><a class="logo" href="#" title="Sedona">
-            <picture>
-              <source media="(min-width: 1150px)" srcset="images/logo-sedona-desktop.svg">
-              <source media="(min-width: 768px)" srcset="images/logo-sedona-tablet.svg">
-              <source media="(min-width: 320px)" srcset="images/logo-sedona-mobile.svg"><img class="logo__img" src="images/logo-sedona-mobile.svg" alt="Sedona" width="102" height="84">
-            </picture></a>
-          <div class="menu-toggle">Кнопка меню<span class="menu-toggle__line"></span></div>
+        <div class="index-wrap">
+          <nav class="nav">
+            <ul class="nav-items">
+              <li class="nav-item"><a class="nav-item__link" href="#">Главная</a></li>
+              <li class="nav-item nav-item_photo"><a class="nav-item__link" href="#">Фото и видео</a></li>
+              <li class="nav-item nav-item_form"><a class="nav-item__link" href="#">Форма отзыва</a></li>
+              <li class="nav-item"><a class="nav-item__link" href="#">HTML ACADEMY</a></li>
+            </ul>
+            <div class="nav-btn-close">Кнопка закрытия меню</div>
+          </nav>
+          <div class="top-menu"><a class="logo" href="#" title="Sedona">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="images/logo-sedona-desktop.svg">
+                <source media="(min-width: 768px)" srcset="images/logo-sedona-tablet.svg">
+                <source media="(min-width: 320px)" srcset="images/logo-sedona-mobile.svg"><img class="logo__img" src="images/logo-sedona-mobile.svg" alt="Sedona" width="102" height="84">
+              </picture></a>
+            <div class="menu-toggle">Кнопка меню<span class="menu-toggle__line"></span></div>
+          </div>
         </div>
       </div>
     </header>
@@ -92,8 +94,10 @@
     </section>
     <section class="hotels">
       <div class="container">
-        <h3 class="hotels-title">Заинтересовались?</h3>
-        <p class="hotels-descr">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p><a class="hotels-btn" href="#">Найти гостинницу</a>
+        <div class="hotels-wrap">
+          <h3 class="hotels-title">Заинтересовались?</h3>
+          <p class="hotels-descr">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p><a class="hotels-btn" href="#">Найти гостинницу</a>
+        </div>
       </div>
     </section>
     <section class="map">
@@ -103,16 +107,18 @@
     </section>
     <footer class="footer">
       <div class="container">
-        <div class="hash">#visitsedona</div>
-        <ul class="social">
-          <li class="social-item social-item_tw"><a class="social-item__link">Твиттер</a></li>
-          <li class="social-item social-item_fb"><a class="social-item__link">Фейсбук</a></li>
-          <li class="social-item social-item_youtube"><a class="social-item__link">Ютуб</a></li>
-        </ul>
-        <div class="developer">Разработано
-          <svg class="developer-icon">
-            <use xlink:href="images/sprite-svg.svg#htmlacademy" width="27px" height="35px"></use>
-          </svg>
+        <div class="footer-wrap">
+          <div class="hash">#visitsedona</div>
+          <ul class="social">
+            <li class="social-item social-item_tw"><a class="social-item__link">Твиттер</a></li>
+            <li class="social-item social-item_fb"><a class="social-item__link">Фейсбук</a></li>
+            <li class="social-item social-item_youtube"><a class="social-item__link">Ютуб</a></li>
+          </ul>
+          <div class="developer">Разработано
+            <svg class="developer-icon">
+              <use xlink:href="images/sprite-svg.svg#htmlacademy" width="27px" height="35px"></use>
+            </svg>
+          </div>
         </div>
       </div>
     </footer>

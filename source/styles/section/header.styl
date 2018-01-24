@@ -1,5 +1,11 @@
 @import "nav";
 
+.header
+	width 320px
+	margin 0 auto
+	position relative
+	background-color #fff
+
 .top-menu
 	height 56px
 	position relative
@@ -38,3 +44,15 @@
 			position absolute
 			left 0
 			top 16px
+
+@media screen and (min-width: 768px)
+	.header
+		width 768px
+	.menu-toggle
+		display none
+	.top-menu
+		position absolute
+		height auto
+		left 50%
+		margin-left -42px
+		top 0

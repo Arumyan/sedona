@@ -7,6 +7,8 @@
 	background-position center bottom, center center
 	background-repeat no-repeat, no-repeat
 	background-size cover, cover
+	box-sizing border-box
+
 
 .intro-image__text
 	width 290px
@@ -36,4 +38,29 @@
 		left 0
 		bottom -26px
 		z-index 10
+
+@media screen and (min-width: 768px)
+	.intro
+		width 768px
+
+	.intro-title
+		padding-top 65px
+		padding-bottom 80px
+		background-image url('../images/bg-intro-triangle-tablet.svg'), url('../images/bg-back-tablet@1x.jpg')
+		background-size 100%, cover
+
+
+	.intro-image__text
+		width 500px
+
+	.intro-descr
+		.intro-descr__title
+			max-width 450px
+			margin 0 auto
+			font-size 21px
+		.intro-triangle
+			display none
+
+
+
 
