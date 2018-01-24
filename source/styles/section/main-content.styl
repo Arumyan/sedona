@@ -1,3 +1,29 @@
+.main-content
+	background-color #fff
+.main-content-descr
+	text-align center
+	text-transform uppercase
+	box-sizing border-box
+	padding-top 45px
+	padding-bottom 50px
+	position relative
+	.main-content-descr__title
+		font-family ff-bold
+		font-size 18px
+		line-height 26px
+		margin 0
+	.main-content-descr__text
+		margin 0
+		padding-top 40px
+		font-size 14px
+		line-height 26px
+	.main-content-triangle
+		width 100%
+		position absolute
+		left 0
+		bottom -26px
+		z-index 10
+
 .main-content__item-title
 	background main-color
 	color #fff
@@ -94,6 +120,15 @@
 		background-image url('../images/icon-burger.svg')
 
 @media screen and (min-width: 768px)
+
+	.main-content-descr
+		.main-content-descr__title
+			max-width 450px
+			margin 0 auto
+			font-size 21px
+		.main-content-triangle
+			display none
+
 	.main-content__items
 		display flex
 		flex-wrap wrap

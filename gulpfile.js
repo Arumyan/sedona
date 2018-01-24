@@ -31,7 +31,7 @@ gulp.task('server', function() {
 
 /* ------------ Pug compile ------------- */
 gulp.task('templates:compile', function buildHTML() {
-  return gulp.src('source/template/index.pug')
+  return gulp.src('source/template/*.pug')
     .pipe(plumber())
     .pipe(pug({
       pretty: true
@@ -119,8 +119,14 @@ gulp.task('copy:images', function() {
     .pipe(gulp.dest('build/images'));
 });
 
+/* ------------ Copy video ------------- */
+gulp.task('copy:video', function() {
+  return gulp.src('./source/video/**/*.*')
+    .pipe(gulp.dest('build/video'));
+});
+
 /* ------------ Copy ------------- */
-gulp.task('copy', gulp.parallel('copy:fonts', 'copy:images'));
+gulp.task('copy', gulp.parallel('copy:fonts', 'copy:images', 'copy:video'));
 
 /* ------------ Watchers ------------- */
 gulp.task('watch', function() {

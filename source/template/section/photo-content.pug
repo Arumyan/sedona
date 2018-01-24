@@ -1,0 +1,66 @@
+section.photo-content
+	h2.photo-content__title Фото и видео
+	p.photo-content__descr Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
+	.photo-items
+		.photo-item
+			picture
+				source(media="(min-width: 1150px)" srcset="images/photo-sunset-desktop@1x.jpg")
+				source(media="(min-width: 768px)" srcset="images/photo-sunset-tablet@1x.jpg")
+				img(src="images/photo-sunset-mobile@1x.jpg", alt="sunset").photo-item__img
+			.photo-item__descr
+				h3.photo-item__title Неродные просторы
+				.photo-item__author
+					span.photo-item__author_title Автор фото:
+					span.photo-item__author_name Борис
+				.photo-item__like
+					button.like-img Лайк
+					span.like-count 1350
+
+		.photo-item
+			picture
+				source(media="(min-width: 1150px)" srcset="images/photo-cactus-desktop@1x.jpg")
+				source(media="(min-width: 768px)" srcset="images/photo-cactus-tablet@1x.jpg")
+				img(src="images/photo-cactus-mobile@1x.jpg", alt="sunset").photo-item__img
+			.photo-item__descr
+				h3.photo-item__title Местная растительность
+				.photo-item__author
+					span.photo-item__author_title Автор фото:
+					span.photo-item__author_name Сергей
+				.photo-item__like
+					button.like-img Лайк
+					span.like-count 143
+
+		.photo-item
+			picture
+				source(media="(min-width: 1150px)" srcset="images/photo-roads-desktop@1x.jpg")
+				source(media="(min-width: 768px)" srcset="images/photo-roads-tablet@1x.jpg")
+				img(src="images/photo-roads-mobile@1x.jpg", alt="sunset").photo-item__img
+			.photo-item__descr
+				h3.photo-item__title Дорога на север
+				.photo-item__author
+					span.photo-item__author_title Автор фото:
+					span.photo-item__author_name Петр
+				.photo-item__like
+					button.like-img Лайк
+					span.like-count 96
+
+		.photo-item
+			picture
+				source(media="(min-width: 1150px)" srcset="images/photo-bridge-desktop@1x.jpg")
+				source(media="(min-width: 768px)" srcset="images/photo-bridge-tablet@1x.jpg")
+				img(src="images/photo-bridge-mobile@1x.jpg", alt="sunset").photo-item__img
+			.photo-item__descr
+				h3.photo-item__title Мост дьявола
+				.photo-item__author
+					span.photo-item__author_title Автор фото:
+					span.photo-item__author_name Антон
+				.photo-item__like
+					button.like-img Лайк
+					span.like-count 254
+	.video-item
+		h2.video-item__title Все еще сомневаетесь?
+		p.video-item__descr Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+		.video-videocontent
+			video(src="video/Golden_Gate_Traffic.mp4" controls="controls" poster="images/video-desktop@1x.jpg").video-videoclip
+
+

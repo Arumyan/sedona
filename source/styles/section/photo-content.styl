@@ -1,0 +1,153 @@
+.photo-content
+	box-sizing border-box
+	padding 40px 0px
+	background-color #fff
+
+.photo-content__title
+	font-family ff-bold
+	font-size 18px
+	text-transform uppercase
+	text-align center
+	margin 0
+
+
+.photo-content__descr
+	font-size 14px
+	line-height 24px
+	text-align center
+	text-transform uppercase
+	margin 0
+	padding 35px 25px
+
+.photo-item
+	padding 22px 20px
+	border-top 1px solid #e5e5e5
+	&:last-child
+		border-bottom 1px solid #e5e5e5
+	.photo-item__img
+		width 280px
+		height 280px
+
+	.photo-item__title
+		font-size 14px
+		font-family ff-bold
+		text-transform uppercase
+
+	.photo-item__author
+		font-size 14px
+		color #333333
+		margin-bottom 15px
+		.photo-item__author_name
+			margin-left 3px
+
+	.photo-item__like
+		display flex
+		align-items flex-end
+		.like-img
+			width 25px
+			height 25px
+			background url('../images/icon-like.svg') no-repeat center center
+			background-size cover
+			border none
+			cursor pointer
+			font-size 0
+		.like-count
+			font-size 14px
+			font-family ff-bold
+			margin-left 15px
+
+.video-item
+	padding-top 20px
+
+.video-item__title
+	font-family ff-bold
+	font-size 18px
+	text-transform uppercase
+	text-align center
+	margin 0
+
+.video-item__descr
+	font-size 14px
+	line-height 24px
+	text-align center
+	text-transform uppercase
+	margin 0
+	padding 35px 25px
+
+.video-videoclip
+	width 100%
+
+@media screen and (min-width: 768px)
+	.photo-content
+		padding 40px 60px
+
+	.photo-content__title, .video-item__title
+		font-size 30px
+
+	.photo-content__descr, .video-item__descr
+		max-width 430px
+		display block
+		margin 0 auto
+
+	.photo-items
+		display flex
+		flex-wrap wrap
+
+	.photo-item
+		border-top none
+		padding 0
+		background-color #f2f2f2
+		width 50%
+		.photo-item__img
+			height 267px
+			width 100%
+			vertical-align middle
+		&:first-child
+			width 100%
+			.photo-item__img
+				width 100%
+				height 400px
+
+		&:last-child
+			border-bottom none
+
+		.photo-item__descr
+			box-sizing border-box
+			padding 10px 20px
+			position relative
+
+			.photo-item__like
+				position absolute
+				right 25px
+				top 40px
+	.video-item
+		padding-top 50px
+
+@media screen and (min-width: 1150px)
+	.photo-content
+		padding 110px 60px 40px
+	.photo-content__descr
+		padding-bottom 80px
+
+	.photo-item
+		width calc(100%/3)
+		position relative
+		.photo-item__img
+			height 267px
+			width 100%
+			vertical-align middle
+
+		.photo-item__descr
+			position absolute
+			left 0
+			bottom 0
+			width 100%
+			background-color rgba(#000, 0.4)
+			color #fff
+
+			.photo-item__author
+				color #fff
+	.video-item
+		max-width 800px
+		display block
+		margin 0 auto

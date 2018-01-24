@@ -353,7 +353,20 @@ body {
   margin: 0 auto;
 }
 
-.intro-descr {
+.intro.intro-pages .intro-title {
+  padding: 0;
+}
+
+.intro.intro-pages .intro-title .intro-image__text {
+  width: 230px;
+  height: 160px;
+}
+
+.main-content {
+  background-color: #fff;
+}
+
+.main-content-descr {
   text-align: center;
   text-transform: uppercase;
   -webkit-box-sizing: border-box;
@@ -363,21 +376,21 @@ body {
   position: relative;
 }
 
-.intro-descr .intro-descr__title {
+.main-content-descr .main-content-descr__title {
   font-family: "PT Sans Bold", sans-serif;
   font-size: 18px;
   line-height: 26px;
   margin: 0;
 }
 
-.intro-descr .intro-descr__text {
+.main-content-descr .main-content-descr__text {
   margin: 0;
   padding-top: 40px;
   font-size: 14px;
   line-height: 26px;
 }
 
-.intro-descr .intro-triangle {
+.main-content-descr .main-content-triangle {
   width: 100%;
   position: absolute;
   left: 0;
@@ -500,6 +513,110 @@ body {
 
 .reason-burger:before {
   background-image: url("../images/icon-burger.svg");
+}
+
+.photo-content {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 40px 0px;
+  background-color: #fff;
+}
+
+.photo-content__title {
+  font-family: "PT Sans Bold", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+
+.photo-content__descr {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 35px 25px;
+}
+
+.photo-item {
+  padding: 22px 20px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.photo-item:last-child {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.photo-item .photo-item__img {
+  width: 280px;
+  height: 280px;
+}
+
+.photo-item .photo-item__title {
+  font-size: 14px;
+  font-family: "PT Sans Bold", sans-serif;
+  text-transform: uppercase;
+}
+
+.photo-item .photo-item__author {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.photo-item .photo-item__author .photo-item__author_name {
+  margin-left: 3px;
+}
+
+.photo-item .photo-item__like {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.photo-item .photo-item__like .like-img {
+  width: 25px;
+  height: 25px;
+  background: url("../images/icon-like.svg") no-repeat center center;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+  font-size: 0;
+}
+
+.photo-item .photo-item__like .like-count {
+  font-size: 14px;
+  font-family: "PT Sans Bold", sans-serif;
+  margin-left: 15px;
+}
+
+.video-item {
+  padding-top: 20px;
+}
+
+.video-item__title {
+  font-family: "PT Sans Bold", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+
+.video-item__descr {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 35px 25px;
+}
+
+.video-videoclip {
+  width: 100%;
 }
 
 .hotels-wrap {
@@ -728,13 +845,22 @@ body {
     width: 500px;
   }
 
-  .intro-descr .intro-descr__title {
+  .intro.intro-pages .intro-title {
+    padding: 95px 0;
+  }
+
+  .intro.intro-pages .intro-title .intro-image__text {
+    width: 450px;
+    height: 160px;
+  }
+
+  .main-content-descr .main-content-descr__title {
     max-width: 450px;
     margin: 0 auto;
     font-size: 21px;
   }
 
-  .intro-descr .intro-triangle {
+  .main-content-descr .main-content-triangle {
     display: none;
   }
 
@@ -830,6 +956,73 @@ body {
     top: 55px;
   }
 
+  .photo-content {
+    padding: 40px 60px;
+  }
+
+  .photo-content__title,
+  .video-item__title {
+    font-size: 30px;
+  }
+
+  .photo-content__descr,
+  .video-item__descr {
+    max-width: 430px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .photo-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .photo-item {
+    border-top: none;
+    padding: 0;
+    background-color: #f2f2f2;
+    width: 50%;
+  }
+
+  .photo-item .photo-item__img {
+    height: 267px;
+    width: 100%;
+    vertical-align: middle;
+  }
+
+  .photo-item:first-child {
+    width: 100%;
+  }
+
+  .photo-item:first-child .photo-item__img {
+    width: 100%;
+    height: 400px;
+  }
+
+  .photo-item:last-child {
+    border-bottom: none;
+  }
+
+  .photo-item .photo-item__descr {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    position: relative;
+  }
+
+  .photo-item .photo-item__descr .photo-item__like {
+    position: absolute;
+    right: 25px;
+    top: 40px;
+  }
+
+  .video-item {
+    padding-top: 50px;
+  }
+
   .hotels-title {
     font-size: 30px;
     padding: 50px 15px;
@@ -886,5 +1079,43 @@ body {
 
   .item-bridge__img {
     background: url("../images/main-bridge-desktop@1x.jpg");
+  }
+
+  .photo-content {
+    padding: 110px 60px 40px;
+  }
+
+  .photo-content__descr {
+    padding-bottom: 80px;
+  }
+
+  .photo-item {
+    width: calc(100% / 3);
+    position: relative;
+  }
+
+  .photo-item .photo-item__img {
+    height: 267px;
+    width: 100%;
+    vertical-align: middle;
+  }
+
+  .photo-item .photo-item__descr {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+    color: #fff;
+  }
+
+  .photo-item .photo-item__descr .photo-item__author {
+    color: #fff;
+  }
+
+  .video-item {
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
   }
 }
