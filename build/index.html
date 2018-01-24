@@ -8,40 +8,33 @@
     <title>Sedona</title>
   </head>
   <body>
-    <header class="header index-header">
-      <div class="container">
-        <div class="index-wrap">
-          <nav class="nav">
-            <ul class="nav-items">
-              <li class="nav-item"><a class="nav-item__link" href="#">Главная</a></li>
-              <li class="nav-item nav-item_photo"><a class="nav-item__link" href="#">Фото и видео</a></li>
-              <li class="nav-item nav-item_form"><a class="nav-item__link" href="#">Форма отзыва</a></li>
-              <li class="nav-item"><a class="nav-item__link" href="#">HTML ACADEMY</a></li>
-            </ul>
-            <div class="nav-btn-close">Кнопка закрытия меню</div>
-          </nav>
-          <div class="top-menu"><a class="logo" href="#" title="Sedona">
-              <picture>
-                <source media="(min-width: 1150px)" srcset="images/logo-sedona-desktop.svg">
-                <source media="(min-width: 768px)" srcset="images/logo-sedona-tablet.svg">
-                <source media="(min-width: 320px)" srcset="images/logo-sedona-mobile.svg"><img class="logo__img" src="images/logo-sedona-mobile.svg" alt="Sedona" width="102" height="84">
-              </picture></a>
-            <div class="menu-toggle">Кнопка меню<span class="menu-toggle__line"></span></div>
+    <div class="wrapper-content">
+      <header class="header">
+        <nav class="nav">
+          <ul class="nav-items">
+            <li class="nav-item"><a class="nav-item__link" href="#">Главная</a></li>
+            <li class="nav-item nav-item_photo"><a class="nav-item__link" href="#">Фото и видео</a></li>
+            <li class="nav-item nav-item_form"><a class="nav-item__link" href="#">Форма отзыва</a></li>
+            <li class="nav-item"><a class="nav-item__link" href="#">HTML ACADEMY</a></li>
+            <div class="nav-btn nav-btn-close">Меню</div>
+          </ul>
+        </nav><a class="header-logo" href="#" title="Sedona">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="images/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="images/logo-sedona-tablet.svg">
+            <source media="(min-width: 320px)" srcset="images/logo-sedona-mobile.svg"><img class="logo__img" src="images/logo-sedona-mobile.svg" alt="Sedona" width="102" height="84">
+          </picture></a>
+      </header>
+      <section class="intro">
+        <div class="intro-title"><img class="intro-image__text" src="images/text-sedona-index.svg" width="320" height="389" alt="SEDONA"></div>
+        <div class="intro-descr"><img class="intro-triangle" src="images/bg-triangle.svg" alt="">
+          <div class="container">
+            <h2 class="intro-descr__title">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h2>
+            <p class="intro-descr__text">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
           </div>
         </div>
-      </div>
-    </header>
-    <section class="intro">
-      <div class="intro-title"><img class="intro-image__text" src="images/text-sedona-index.svg" width="320" height="389" alt="SEDONA"></div>
-      <div class="intro-descr"><img class="intro-triangle" src="images/bg-triangle.svg" alt="">
-        <div class="container">
-          <h2 class="intro-descr__title">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h2>
-          <p class="intro-descr__text">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
-        </div>
-      </div>
-    </section>
-    <section class="main-content">
-      <div class="container">
+      </section>
+      <section class="main-content">
         <div class="main-content__items">
           <div class="main-content__item item-city">
             <div class="main-content__item-title">
@@ -90,38 +83,29 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="hotels">
-      <div class="container">
+      </section>
+      <section class="hotels">
         <div class="hotels-wrap">
           <h3 class="hotels-title">Заинтересовались?</h3>
           <p class="hotels-descr">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p><a class="hotels-btn" href="#">Найти гостинницу</a>
         </div>
-      </div>
-    </section>
-    <section class="map">
-      <div class="container">
+      </section>
+      <section class="map">
         <div id="map"></div>
-      </div>
-    </section>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-wrap">
-          <div class="hash">#visitsedona</div>
+      </section>
+      <footer class="footer">
+        <div class="footer-wrap"><a class="hash" href="#">#visitsedona</a>
           <ul class="social">
             <li class="social-item social-item_tw"><a class="social-item__link">Твиттер</a></li>
             <li class="social-item social-item_fb"><a class="social-item__link">Фейсбук</a></li>
             <li class="social-item social-item_youtube"><a class="social-item__link">Ютуб</a></li>
-          </ul>
-          <div class="developer">Разработано
+          </ul><a class="developer" href="#">Разработано
             <svg class="developer-icon">
               <use xlink:href="images/sprite-svg.svg#htmlacademy" width="27px" height="35px"></use>
-            </svg>
-          </div>
+            </svg></a>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
     <script src="js/main.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvSnexh0iWaB7Z5U8FA_BpcEgJIVD3d4g&amp;callback=initMap" async defer></script>
   </body>

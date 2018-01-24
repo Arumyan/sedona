@@ -1,67 +1,101 @@
-@import "nav";
-
 .header
-	width 320px
-	margin 0 auto
 	position relative
 	background-color #fff
 
-.top-menu
-	height 56px
-	position relative
-.logo
+.header-logo
 	text-align center
 	display block
+	height 56px
 
-.menu-toggle
-	font-size 0
-	width 30px
-	height 24px
-	position absolute
-	top 16px
-	right 15px
-	cursor pointer
-	.menu-toggle__line
-		width 30px
-		height 3px
-		display block
+.nav
+	position relative
+
+.nav-items
+	margin 0
+	padding 0
+	text-align center
+	position relative
+	.nav-item
+		list-style-type none
+		color #fff
 		background-color main-color
-		&:before
-			content ''
-			display block
-			width 30px
-			height 3px
-			background-color main-color
-			position absolute
-			left 0
-			top 8px
-		&:after
-			content ''
-			display block
-			width 30px
-			height 3px
-			background-color main-color
-			position absolute
-			left 0
-			top 16px
+		text-transform uppercase
+		font-size 18px
+		font-family ff-bold
+		padding 20px 0
+		border-bottom 1px solid rgba(#000, 0.2)
+		border-top 1px solid rgba(#fff, 0.2)
+		transition background 0.3s
+		&:last-child
+			box-shadow 0 -6px 4px -4px rgba(0, 0, 0, .2) inset
+		&:active
+			background main-black-color
+		&:hover
+			background main-light-color
+
+		.nav-item__link
+			text-decoration none
+			color inherit
+.nav-btn
+	width 40px
+	height 40px
+	position absolute
+	font-size 0
+	cursor pointer
+
+.nav-btn-toggle
+	right 15px
+	bottom -45px
+	background url('../images/icon-menu.svg') no-repeat center center
+
+.nav-btn-close
+	right 15px
+	top 15px
+	background url('../images/icon-cross.svg') no-repeat center center
+
+
 
 @media screen and (min-width: 768px)
-	.header
-		width 768px
-	.menu-toggle
-		display none
-	.top-menu
-		position absolute
+	.header-logo
 		height auto
+
+	.logo__img
+		position absolute
+		top 0
 		left 50%
 		margin-left -42px
-		top 0
+
+	.nav-items
+		display flex
+		justify-content space-between
+		.nav-item_photo
+			margin-right auto
+		.nav-item_form
+			margin-left auto
+		.nav-item
+			width 20%
+			color #000
+			background none
+			border none
+			font-size 14px
+			transition color 0.3s
+			&:last-child
+				box-shadow none
+			&:active
+				background none
+				color #cacaca
+				&:hover
+					color #604e43
+			&:hover
+				background none
+				color main-color
+	.nav-btn
+		display none
+
 
 @media screen and (min-width: 1150px)
-	.header
-		width 1150px
-	.top-menu
-		margin-left -95px
+
 	.logo__img
 		width 190px
 		height 97px
+		margin-left -95px

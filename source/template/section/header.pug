@@ -1,15 +1,23 @@
-header.header.index-header
-	.container
-		.index-wrap
-			include nav
-			.top-menu
-				a(href="#" title="Sedona").logo
-					picture
-						source(media="(min-width: 1150px)" srcset="images/logo-sedona-desktop.svg")
-						source(media="(min-width: 768px)" srcset="images/logo-sedona-tablet.svg")
-						source(media="(min-width: 320px)" srcset="images/logo-sedona-mobile.svg")
-						img(src="images/logo-sedona-mobile.svg" alt="Sedona" width="102" height="84").logo__img
-				.menu-toggle Кнопка меню
-					span.menu-toggle__line
+header.header
+
+	nav.nav
+		ul.nav-items
+			li.nav-item
+				a(href="#").nav-item__link Главная
+			li.nav-item.nav-item_photo
+				a(href="#").nav-item__link Фото и видео
+			li.nav-item.nav-item_form
+				a(href="#").nav-item__link Форма отзыва
+			li.nav-item
+				a(href="#").nav-item__link HTML ACADEMY
+
+			.nav-btn.nav-btn-close Меню
+
+	a(href="#" title="Sedona").header-logo
+		picture
+			source(media="(min-width: 1150px)" srcset="images/logo-sedona-desktop.svg")
+			source(media="(min-width: 768px)" srcset="images/logo-sedona-tablet.svg")
+			source(media="(min-width: 320px)" srcset="images/logo-sedona-mobile.svg")
+			img(src="images/logo-sedona-mobile.svg" alt="Sedona" width="102" height="84").logo__img
 
 
