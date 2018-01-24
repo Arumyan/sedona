@@ -321,7 +321,8 @@ body {
   cursor: pointer;
 }
 
-.nav-btn-toggle {
+.nav-btn-menu {
+  display: none;
   right: 15px;
   bottom: -45px;
   background: url("../images/icon-menu.svg") no-repeat center center;
