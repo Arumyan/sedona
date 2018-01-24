@@ -247,6 +247,7 @@ body {
   width: 100%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  background-color: #f2f2f2;
 }
 
 .container {
@@ -395,6 +396,7 @@ body {
 .intro {
   width: 320px;
   margin: 0 auto;
+  background-color: #fff;
 }
 
 .intro-title {
@@ -502,6 +504,7 @@ body {
   margin: 0;
   padding: 25px 15px;
   text-transform: uppercase;
+  background-color: #fff;
 }
 
 .item-city__reasons .reason {
@@ -550,15 +553,12 @@ body {
   background-image: url("../images/icon-burger.svg");
 }
 
-.hotels {
-  text-align: center;
-  padding: 25px 0;
-}
-
 .hotels-wrap {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 0 15px;
+  padding: 25px 15px;
+  background-color: #fff;
+  text-align: center;
 }
 
 .hotels-title {
@@ -604,9 +604,10 @@ body {
   width: 100%;
 }
 
-.footer {
-  text-align: center;
+.footer-wrap {
+  background-color: #fff;
   padding: 40px 0;
+  text-align: center;
 }
 
 .hash {
@@ -874,20 +875,17 @@ body {
     top: 55px;
   }
 
-  .hotels {
-    padding: 50px 0;
-  }
-
   .hotels-title {
     font-size: 30px;
     margin: 0;
+    padding: 50px 15px;
   }
 
   .hotels-descr {
     max-width: 450px;
     display: block;
     margin: 0 auto;
-    padding: 40px 0;
+    padding-bottom: 40px;
   }
 
   .hotels-btn {
@@ -909,5 +907,43 @@ body {
     align-items: center;
     -ms-flex-pack: distribute;
     justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .container {
+    width: 1150px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .header {
+    width: 1150px;
+  }
+
+  .top-menu {
+    margin-left: -95px;
+  }
+
+  .logo__img {
+    width: 190px;
+    height: 97px;
+  }
+
+  .intro {
+    width: 1150px;
+  }
+
+  .intro-title {
+    background-image: url("../images/bg-intro-triangle-desktop.svg"), url("../images/bg-back-desktop@1x.jpg");
+    background-size: 100%, cover;
+  }
+
+  .item-city__img {
+    background: url("../images/main-city-desktop@1x.jpg");
+  }
+
+  .item-bridge__img {
+    background: url("../images/main-bridge-desktop@1x.jpg");
   }
 }

@@ -1,6 +1,7 @@
 .intro
 	width 320px
 	margin 0 auto
+	background-color #fff
 
 .intro-title
 	background-image url('../images/bg-intro-triangle-mobile.svg'), url('../images/bg-back-mobile@1x.jpg')
@@ -60,6 +61,15 @@
 			font-size 21px
 		.intro-triangle
 			display none
+
+@media screen and (min-width: 1150px)
+	.intro
+		width 1150px
+
+	.intro-title
+		background-image url('../images/bg-intro-triangle-desktop.svg'), url('../images/bg-back-desktop@1x.jpg')
+		background-size 100%, cover
+
 
 
 
