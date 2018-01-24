@@ -1,0 +1,77 @@
+section.form-content
+	h2.form-content__title Оставьте свой отзыв
+	p.form-content__descr Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
+
+	form.form
+		fieldset.form-item.form-name
+			legent.form-item__title Представьтесь:
+			.form-item__list
+				.form-item__list-item
+					label(for="first-name").form-item__list-item-label Имя*:
+					input(id="first-name" type="text" name="first-name" placeholder="Петр" required).form-item__list-item-input
+				.form-item__list-item
+					label(for="last-name").form-item__list-item-label  Фамилия*:
+					input(id="last-name" type="text" name="last-name" placeholder="Иванов" required).form-item__list-item-input
+				.form-item__list-item
+					label(for="patronymic").form-item__list-item-label  Отчество:
+					input(id="patronymic" type="text" name="patronymic" placeholder="Александрович" required).form-item__list-item-input
+
+		fieldset.form-item.form-contact
+			legent.form-item__title Контактная информация:
+			.form-item__list
+
+				.form-item__list-item.form-contact__list-item
+					label(for="phone").form-item__list-item-label Контактный телефон*:
+					input(id="phone" type="tel" name="phone" placeholder="Введите телефон" required).form-item__list-item-input
+					.form-item__list-item-icon.form-item__list-item-icon_phone
+
+				.form-item__list-item.form-contact__list-item
+					label(for="email").form-item__list-item-label Электронная почта*:
+					input(id="email" type="email" name="email" placeholder="Введите mail" required).form-item__list-item-input
+					.form-item__list-item-icon.form-item__list-item-icon_email
+
+		fieldset.form-item.form-impression
+			legent.form-item__title Ваше общее впечатление:
+			.form-item__list
+
+				.form-item__list-item.form-impression__list-item
+					input(id="positive" type="radio" name="impression" value="positive" checked).form-item__list-item-radio
+					label(for="positive").form-item__list-item-label Скорее положительное
+
+				.form-item__list-item.form-impression__list-item
+					input(id="negative" type="radio" name="impression" value="negative").form-item__list-item-radio
+					label(for="negative").form-item__list-item-label Скорее отрицательное
+
+				.form-item__list-item.form-impression__list-item
+					input(id="difficult" type="radio" name="impression" value="difficult").form-item__list-item-radio
+					label(for="difficult").form-item__list-item-label Затрудняюсь ответить
+
+
+		fieldset.form-item.form-attraction
+			legent.form-item__title Посещенные достопримечательности:
+			.form-item__list
+
+				.form-item__list-item.form-attraction__list-item
+					input(id="bridge" type="checkbox" name="bridge" value="bridge" checked).form-item__list-item-checkbox
+					label(for="bridge").form-item__list-item-label Мост-Дьявола
+
+				.form-item__list-item.form-attraction__list-item
+					input(id="park" type="checkbox" name="park" value="park").form-item__list-item-checkbox
+					label(for="park").form-item__list-item-label Слайд-парк
+
+				.form-item__list-item.form-attraction__list-item
+					input(id="mountain" type="checkbox" name="mountain" value="mountain" checked).form-item__list-item-checkbox
+					label(for="mountain").form-item__list-item-label Гора-Колокол
+
+				.form-item__list-item.form-attraction__list-item
+					input(id="rock" type="checkbox" name="rock" value="rock").form-item__list-item-checkbox
+					label(for="rock").form-item__list-item-label Красные скалы
+
+		fieldset.form-item.form-emotion
+			legent.form-item__title Опишите свои эмоции:
+			.form-item__list
+				textarea(name="textarea-emotion" placeholder="Опишите подробно все свои восторги").form-item__list-item-textarea.
+
+		button(type="submit").form-button Отправить отзыв
+		p.form__required-text * - Обязательные поля
+

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>Седона | Форма отзыва</title>
+  </head>
+  <body>
+    <div class="wrapper-content">
+      <header class="header">
+        <nav class="nav">
+          <ul class="nav-items">
+            <li class="nav-item"><a class="nav-item__link" href="index.html">Главная</a></li>
+            <li class="nav-item nav-item_photo"><a class="nav-item__link" href="photo.html">Фото и видео</a></li>
+            <li class="nav-item nav-item_form"><a class="nav-item__link" href="form.html">Форма отзыва</a></li>
+            <li class="nav-item"><a class="nav-item__link" href="htmlacademy.ru">HTML ACADEMY</a></li>
+          </ul>
+          <div class="nav-btn nav-btn-close">Закрыть Меню</div>
+          <div class="nav-btn nav-btn-menu">Открыть Меню</div>
+        </nav><a class="header-logo" href="#" title="Sedona">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="images/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="images/logo-sedona-tablet.svg">
+            <source media="(min-width: 320px)" srcset="images/logo-sedona-mobile.svg"><img class="logo__img" src="images/logo-sedona-mobile.svg" alt="Sedona" width="102" height="84">
+          </picture></a>
+      </header>
+      <section class="intro intro-pages">
+        <div class="intro-title"><img class="intro-image__text" src="images/text-sedona.svg" width="320" height="389" alt="SEDONA"></div>
+      </section>
+      <section class="form-content">
+        <h2 class="form-content__title">Оставьте свой отзыв</h2>
+        <p class="form-content__descr">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <form class="form">
+          <fieldset class="form-item form-name">
+            <legent class="form-item__title">Представьтесь:</legent>
+            <div class="form-item__list">
+              <div class="form-item__list-item">
+                <label class="form-item__list-item-label" for="first-name">Имя*:</label>
+                <input class="form-item__list-item-input" id="first-name" type="text" name="first-name" placeholder="Петр" required>
+              </div>
+              <div class="form-item__list-item">
+                <label class="form-item__list-item-label" for="last-name"> Фамилия*:</label>
+                <input class="form-item__list-item-input" id="last-name" type="text" name="last-name" placeholder="Иванов" required>
+              </div>
+              <div class="form-item__list-item">
+                <label class="form-item__list-item-label" for="patronymic"> Отчество:</label>
+                <input class="form-item__list-item-input" id="patronymic" type="text" name="patronymic" placeholder="Александрович" required>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="form-item form-contact">
+            <legent class="form-item__title">Контактная информация:</legent>
+            <div class="form-item__list">
+              <div class="form-item__list-item form-contact__list-item">
+                <label class="form-item__list-item-label" for="phone">Контактный телефон*:</label>
+                <input class="form-item__list-item-input" id="phone" type="tel" name="phone" placeholder="Введите телефон" required>
+                <div class="form-item__list-item-icon form-item__list-item-icon_phone"></div>
+              </div>
+              <div class="form-item__list-item form-contact__list-item">
+                <label class="form-item__list-item-label" for="email">Электронная почта*:</label>
+                <input class="form-item__list-item-input" id="email" type="email" name="email" placeholder="Введите mail" required>
+                <div class="form-item__list-item-icon form-item__list-item-icon_email"></div>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="form-item form-impression">
+            <legent class="form-item__title">Ваше общее впечатление:</legent>
+            <div class="form-item__list">
+              <div class="form-item__list-item form-impression__list-item">
+                <input class="form-item__list-item-radio" id="positive" type="radio" name="impression" value="positive" checked>
+                <label class="form-item__list-item-label" for="positive">Скорее положительное</label>
+              </div>
+              <div class="form-item__list-item form-impression__list-item">
+                <input class="form-item__list-item-radio" id="negative" type="radio" name="impression" value="negative">
+                <label class="form-item__list-item-label" for="negative">Скорее отрицательное</label>
+              </div>
+              <div class="form-item__list-item form-impression__list-item">
+                <input class="form-item__list-item-radio" id="difficult" type="radio" name="impression" value="difficult">
+                <label class="form-item__list-item-label" for="difficult">Затрудняюсь ответить</label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="form-item form-attraction">
+            <legent class="form-item__title">Посещенные достопримечательности:</legent>
+            <div class="form-item__list">
+              <div class="form-item__list-item form-attraction__list-item">
+                <input class="form-item__list-item-checkbox" id="bridge" type="checkbox" name="bridge" value="bridge" checked>
+                <label class="form-item__list-item-label" for="bridge">Мост-Дьявола</label>
+              </div>
+              <div class="form-item__list-item form-attraction__list-item">
+                <input class="form-item__list-item-checkbox" id="park" type="checkbox" name="park" value="park">
+                <label class="form-item__list-item-label" for="park">Слайд-парк</label>
+              </div>
+              <div class="form-item__list-item form-attraction__list-item">
+                <input class="form-item__list-item-checkbox" id="mountain" type="checkbox" name="mountain" value="mountain" checked>
+                <label class="form-item__list-item-label" for="mountain">Гора-Колокол</label>
+              </div>
+              <div class="form-item__list-item form-attraction__list-item">
+                <input class="form-item__list-item-checkbox" id="rock" type="checkbox" name="rock" value="rock">
+                <label class="form-item__list-item-label" for="rock">Красные скалы</label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="form-item form-emotion">
+            <legent class="form-item__title">Опишите свои эмоции:</legent>
+            <div class="form-item__list">
+              <textarea class="form-item__list-item-textarea" name="textarea-emotion" placeholder="Опишите подробно все свои восторги"></textarea>
+            </div>
+          </fieldset>
+          <button class="form-button" type="submit">Отправить отзыв</button>
+          <p class="form__required-text">* - Обязательные поля</p>
+        </form>
+      </section>
+      <footer class="footer">
+        <div class="footer-wrap"><a class="hash" href="#">#visitsedona</a>
+          <ul class="social">
+            <li class="social-item social-item_tw"><a class="social-item__link">Твиттер</a></li>
+            <li class="social-item social-item_fb"><a class="social-item__link">Фейсбук</a></li>
+            <li class="social-item social-item_youtube"><a class="social-item__link">Ютуб</a></li>
+          </ul><a class="developer" href="#">Разработано
+            <svg class="developer-icon">
+              <use xlink:href="images/sprite-svg.svg#htmlacademy" width="27px" height="35px"></use>
+            </svg></a>
+        </div>
+      </footer>
+    </div>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,212 @@
+
+.form-content
+	padding 40px 0 50px
+	background-color #fff
+
+.form-content__title
+	font-family ff-bold
+	font-size 18px
+	text-transform uppercase
+	text-align center
+	margin 0
+
+.form-content__descr
+	font-size 14px
+	line-height 24px
+	text-align center
+	text-transform uppercase
+	margin 0
+	padding 35px 25px
+
+/*Общие стили для полей формы*/
+.form-item
+	margin 0
+	border-left none
+	border-right none
+	border-bottom none
+	padding 20px
+
+	.form-item__title
+		font-size 18px
+		font-family ff-bold
+		text-transform uppercase
+		text-align center
+		display block
+		width 100%
+
+.form-item__list-item
+	box-sizing border-box
+	margin-top 20px
+	min-width 280px
+.form-item__list-item-label
+	font-size 14px
+	color #333333
+	text-transform uppercase
+	margin-right 10px
+
+.form-item__list-item-input
+	border none
+	background #f2f2f2
+	padding 20px
+	box-sizing border-box
+	font-family ff-bold
+	color #000
+	font-size 18px
+	width 100%
+	border 2px solid transparent
+	display block
+	transition background 0.3s
+	&:focus
+		background-color #fff
+		border 2px solid #f2f2f2
+	&:hover
+		background-color #e5e5e5
+
+/*Стили для полей контакной информации(инпуты)*/
+.form-contact__list-item
+	position relative
+	.form-item__list-item-label
+		margin-left 10px
+	.form-item__list-item-input
+		margin-top 10px
+		padding 15px 65px 15px 15px
+	.form-item__list-item-icon
+		width 58px
+		height 56px
+		background-color #e6e6e6
+		position absolute
+		right 0
+		bottom 0
+		background-repeat no-repeat
+		background-position center center
+	.form-item__list-item-icon_phone
+		background-image url('../images/icon-phone.svg')
+	.form-item__list-item-icon_email
+		background-image url('../images/icon-mail.svg')
+
+
+/*Стили для полей впечатлений(радиокнопки) */
+.form-impression
+	padding-bottom 50px
+.form-impression__list-item
+	.form-item__list-item-radio
+		display none
+
+	.form-item__list-item-label
+		position relative
+		display block
+		box-sizing border-box
+		padding-left 80px
+		margin-top 60px
+		font-family ff-bold
+		text-transform none
+
+		&:before
+			content ''
+			position absolute
+			left 0
+			top -22px
+			width 60px
+			height 60px
+			border-radius 50%
+			display block
+			background-color #f2f2f2
+			transition background 0.3s
+		&:hover
+			&:before
+				background-color #e5e5e5
+
+	.form-item__list-item-radio:checked + .form-item__list-item-label
+		&:after
+			content ''
+			position absolute
+			left 18px
+			top -5px
+			width 25px
+			height 25px
+			border-radius 50%
+			display block
+			background-color #000
+
+/*Стили для полей достопримечательностей(чекбоксы) */
+.form-attraction
+	padding-bottom 50px
+.form-attraction__list-item
+	.form-item__list-item-checkbox
+		display none
+
+	.form-item__list-item-label
+		position relative
+		display block
+		box-sizing border-box
+		padding-left 80px
+		margin-top 60px
+		font-family ff-bold
+		text-transform none
+
+		&:before
+			content ''
+			position absolute
+			left 0
+			top -22px
+			width 60px
+			height 60px
+			border-radius 5px
+			display block
+			background-color #f2f2f2
+			transition background 0.3s
+		&:hover
+			&:before
+				background-color #e5e5e5
+
+	.form-item__list-item-checkbox:checked + .form-item__list-item-label
+		&:before
+			background-image url('../images/icon-tick.svg')
+			background-repeat no-repeat
+			background-position center center
+
+/*Стили для поля эмоции(текстэреа) */
+
+.form-item__list-item-textarea
+	font-size 16px
+	line-height 26px
+	font-family ff-bold
+	color #000
+	margin-top 17px
+	padding-top 16px
+	padding-left 20px
+	padding-right 20px
+	border 0
+	background-color #f2f2f2
+	box-sizing border-box
+	resize none
+	min-height 160px
+	width 100%
+	border 2px solid transparent
+	transition background 0.3s
+	&:focus
+		background-color #fff
+		border 2px solid #f2f2f2
+	&:hover
+		background-color #e5e5e5
+
+
+.form-button
+	background-color main-color
+	border none
+	display block
+	width 280px
+	margin 0 auto
+	box-sizing border-box
+	padding 21px 0
+	color #fff
+	font-size 21px
+	font-family ff-bold
+	margin-top 40px
+	text-transform uppercase
+	transition background 0.3s
+	&:hover
+		background-color main-light-color
+
+.form__required-text
+	display none
