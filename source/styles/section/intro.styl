@@ -7,6 +7,8 @@
 	background-repeat no-repeat, no-repeat
 	background-size cover, cover
 	box-sizing border-box
+	@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx)
+		background-image url('../images/bg-intro-triangle-mobile.svg'), url('../images/bg-back-mobile@2x.jpg')
 
 .intro-image__text
 	width 290px
@@ -21,7 +23,8 @@
 		padding-bottom 80px
 		background-image url('../images/bg-intro-triangle-tablet.svg'), url('../images/bg-back-tablet@1x.jpg')
 		background-size 100%, cover
-
+		@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx)
+			background-image url('../images/bg-intro-triangle-tablet.svg'), url('../images/bg-back-tablet@2x.jpg')
 	.intro-image__text
 		width 500px
 
@@ -31,6 +34,9 @@
 	.intro-title
 		background-image url('../images/bg-intro-triangle-desktop.svg'), url('../images/bg-back-desktop@1x.jpg')
 		background-size 100%, cover
+		@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx)
+			background-image url('../images/bg-intro-triangle-desktop.svg'), url('../images/bg-back-desktop@2x.jpg')
+
 
 
 
