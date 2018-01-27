@@ -1,19 +1,14 @@
-doctype html
-html(lang='ru')
-	head
-		meta(charset='UTF-8')
-		meta(http-equiv='X-UA-Compatible', content="IE=edge")
-		meta(name='viewport' content='width=device-width, initial-scale=1.0')
-		link(rel="stylesheet" href="css/main.min.css")
-		title Седона | Главная
-	body
-		.wrapper-content
-			include section/header
-			include section/intro
-			include section/main-content
-			include section/hotels
-			include section/map
-			include section/footer
+extends layout/page-layout
 
-		script(src="js/main.min.js")
-		script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvSnexh0iWaB7Z5U8FA_BpcEgJIVD3d4g&callback=initMap" async defer)
+block title
+	title Седона | Главная
+
+block content
+	include section/intro
+	include section/main-content
+	include section/hotels
+	include section/map
+
+block append scripts
+	script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvSnexh0iWaB7Z5U8FA_BpcEgJIVD3d4g&callback=initMap" async defer)
+
